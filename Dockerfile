@@ -1,9 +1,16 @@
 FROM python:3-slim
 
+RUN mkdir Restaurant
+
+WORKDIR /Restaurant
+
 COPY . .
 
-WORKDIR ./apps
+RUN pip install --no-cache-dir -r requirements.txt
 
-RUN pip install -r requirements.txt
+ENV PYTHONPATH="/Restaurant"
 
-CMD ["python","app.py"]
+CMD [ "python", "./apps/app.py" ]
+
+
+
