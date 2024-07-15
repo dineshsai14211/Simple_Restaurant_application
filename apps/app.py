@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from log import logging_logic
-import logging as log
+from log.logging_logic import *
 
 app = Flask(__name__)
 CORS(app)
@@ -75,7 +74,7 @@ def delete_order(order_id):
             log.info(f'Deleted the order id = {order_id}')
             return jsonify({"status": "Order deleted"})
         else:
-            raise Exception(f'Order id= {order_id} has not found')
+            raise Exception(f'For Deleting Order, Order id= {order_id} has not found')
     except Exception as err:
         log.error(err)
         return jsonify({"error": "Order not found"}), 404
