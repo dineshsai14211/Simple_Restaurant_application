@@ -25,7 +25,7 @@ def get_order(order_id):
     order = orders.get(order_id)  # {"category": "Chinese Fast Foods", "status": "Preparing"}
     try:
         if order:
-            log.info(f'For order={order_id}---->{order}')
+            log.info(f'For order id={order_id}---->{order}')
             return jsonify(order)  # jsonify({"category": "Chinese Fast Foods", "status": "Preparing"})
         else:
             raise Exception(f'For getting order info, order id ={order_id} has not found')
