@@ -42,7 +42,7 @@ def create_order():
     new_order = request.json
     order_id = len(orders) + 1
     orders[order_id] = {"category": new_order["category"], "status": "Preparing"}
-    log.info(f'For order={order_id}--->{orders[order_id]}')
+    log.info(f'For order id={order_id}--->{orders[order_id]}')
     log.info(f'"order_id": {order_id}, "status": "Order received"')
     log.info(f'create_order function has ended...')
     return jsonify({"order_id": order_id, "status": "Order received"}), 201
@@ -53,8 +53,10 @@ def update_order(order_id):
     log.info(f'update_order function has started...')
     try:
         if order_id in orders:
-            orders[order_id]["status"] = request.json["status"]
             log.info(f'Updating the orderID={order_id}')
+            log.info(f'Before updating the order = {orders[order_id]}')
+            orders[order_id]["status"] = request.json["status"]
+            log.info(f'After Updated the order is = {orders[order_id]}')
             return jsonify({"order_id": order_id, "status": "Order updated"})
         else:
             raise Exception(f'For updating order, Order id = {order_id} has not found')
@@ -70,8 +72,9 @@ def delete_order(order_id):
     log.info(f'delete_order function has started...')
     try:
         if order_id in orders:
+            log.info(f'Deleting the order= {orders[order_id]}')
             del orders[order_id]
-            log.info(f'Deleted the order id = {order_id}')
+            log.info(f'Successfully,Deleted the order id = {order_id}')
             return jsonify({"status": "Order deleted"})
         else:
             raise Exception(f'For Deleting Order, Order id= {order_id} has not found')
