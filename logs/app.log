@@ -119,3 +119,20 @@
 2024-07-15 19:30:03,724 - INFO - Welcome to Novotel Restaurant!
 2024-07-15 19:30:03,726 - INFO - 127.0.0.1 - - [15/Jul/2024 19:30:03] "GET / HTTP/1.1" 200 -
 2024-07-15 19:30:03,809 - INFO - 127.0.0.1 - - [15/Jul/2024 19:30:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-07-16 17:36:54,790 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-16 17:36:54,791 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-16 17:36:54,803 - INFO -  * Restarting with stat
+2024-07-16 17:36:55,905 - WARNING -  * Debugger is active!
+2024-07-16 17:36:55,934 - INFO -  * Debugger PIN: 758-038-937
+2024-07-16 17:37:06,998 - INFO - get_order function has started...
+2024-07-16 17:37:06,998 - INFO - For order id=2---->{'category': 'Indian Vegetarian', 'status': 'Preparing'}
+2024-07-16 17:37:06,998 - INFO - get_order function has ended...
+2024-07-16 17:37:06,998 - INFO - 127.0.0.1 - - [16/Jul/2024 17:37:06] "GET /order/2 HTTP/1.1" 200 -
+2024-07-16 17:51:51,042 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-16 17:51:51,042 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-16 17:51:51,060 - INFO -  * Restarting with stat
+2024-07-16 17:51:52,224 - WARNING -  * Debugger is active!
+2024-07-16 17:51:52,241 - INFO -  * Debugger PIN: 758-038-937
+2024-07-16 17:52:07,072 - INFO - 127.0.0.1 - - [16/Jul/2024 17:52:07] "[35m[1mGET /order/2 HTTP/1.1[0m" 500 -
