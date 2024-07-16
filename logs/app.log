@@ -136,3 +136,15 @@
 2024-07-16 17:51:52,224 - WARNING -  * Debugger is active!
 2024-07-16 17:51:52,241 - INFO -  * Debugger PIN: 758-038-937
 2024-07-16 17:52:07,072 - INFO - 127.0.0.1 - - [16/Jul/2024 17:52:07] "[35m[1mGET /order/2 HTTP/1.1[0m" 500 -
+2024-07-16 18:06:19,746 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-16 18:06:19,746 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-16 18:06:19,762 - INFO -  * Restarting with stat
+2024-07-16 18:06:20,938 - WARNING -  * Debugger is active!
+2024-07-16 18:06:20,957 - INFO -  * Debugger PIN: 758-038-937
+2024-07-16 18:58:54,590 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-16 18:58:54,595 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-16 18:58:54,610 - INFO -  * Restarting with stat
+2024-07-16 18:58:55,699 - WARNING -  * Debugger is active!
+2024-07-16 18:58:55,716 - INFO -  * Debugger PIN: 758-038-937

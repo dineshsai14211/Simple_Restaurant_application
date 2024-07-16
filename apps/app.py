@@ -1,11 +1,10 @@
 """
-These program is a flask based web-application for managing the restaurant orders, having functionalities of managing the
-create,update,get,delete orders in database.
+These program is a flask based web-application for managing the restaurant orders,
+having functionalities of managing the create,update,get,delete orders in database.
 """
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import logging as log
-from logs.logging_logic import log_logic
+from logs.logging_logic import *
 
 app = Flask(__name__)
 CORS(app)
@@ -39,10 +38,9 @@ def get_order(order_id):
     order = orders.get(order_id)  # {"category": "Chinese Fast Foods", "status": "Preparing"}
     try:
         if order:
-            log.info(f'For order id={order_id}---->{order}')
-            return jsonify(order)  # jsonify({"category": "Chinese Fast Foods", "status": "Preparing"})
-        else:
-            raise Exception(f'For getting order info, order id ={order_id} has not found')
+            log.debug(f'For order id={order_id}---->{order}')
+            return jsonify(order)
+        raise Exception(f'For getting order info, order id ={order_id} has not found')
     except Exception as err:
         log.error(err)
         return jsonify({"error": "Order not found"}), 404
@@ -61,7 +59,7 @@ def create_order():
     order_id = len(orders) + 1
     orders[order_id] = {"category": new_order["category"], "status": "Preparing"}
     log.debug(f'For order id={order_id}--->{orders[order_id]}')
-    log.info(f'"order_id": {order_id}, "status": "Order received"')
+    log.debug(f'"order_id": {order_id}, "status": "Order received"')
     log.info('create_order function has ended...')
     return jsonify({"order_id": order_id, "status": "Order received"}), 201
 
@@ -81,8 +79,7 @@ def update_order(order_id):
             orders[order_id]["status"] = request.json["status"]
             log.debug(f'After Updated the order is = {orders[order_id]}')
             return jsonify({"order_id": order_id, "status": "Order updated"})
-        else:
-            raise Exception(f'For updating order, Order id = {order_id} has not found')
+        raise Exception(f'For updating order, Order id = {order_id} has not found')
     except Exception as err:
         log.error(err)
         return jsonify({"error": "Order not found"}), 404
@@ -102,10 +99,9 @@ def delete_order(order_id):
         if order_id in orders:
             log.info(f'Deleting the order= {orders[order_id]}')
             del orders[order_id]
-            log.info(f'Successfully,Deleted the order id = {order_id}')
+            log.debug(f'Successfully,Deleted the order id = {order_id}')
             return jsonify({"status": "Order deleted"})
-        else:
-            raise Exception(f'For Deleting Order, Order id= {order_id} has not found')
+        raise Exception(f'For Deleting Order, Order id= {order_id} has not found')
     except Exception as err:
         log.error(err)
         return jsonify({"error": "Order not found"}), 404
