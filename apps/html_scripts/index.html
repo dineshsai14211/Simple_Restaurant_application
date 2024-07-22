@@ -91,7 +91,7 @@
     <script>
         async function createOrder() {
             const category = document.getElementById('category').value;
-            const response = await fetch('http://127.0.0.1:5000/order', {
+            const response = await fetch('/order', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -104,7 +104,7 @@
 
         async function getOrder() {
             const orderId = document.getElementById('order_id').value;
-            const response = await fetch(`http://127.0.0.1:5000/order/${orderId}`);
+            const response = await fetch(`/order/${orderId}`);
             const data = await response.json();
             const orderDetails = document.getElementById('orderDetails');
             if (data.error) {
@@ -121,7 +121,7 @@
         async function updateOrder() {
             const orderId = document.getElementById('order_id').value;
             const status = document.getElementById('status').value;
-            const response = await fetch(`http://127.0.0.1:5000/order/${orderId}`, {
+            const response = await fetch(`/order/${orderId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -134,7 +134,7 @@
 
         async function deleteOrder() {
             const orderId = document.getElementById('order_id').value;
-            const response = await fetch(`http://127.0.0.1:5000/order/${orderId}`, {
+            const response = await fetch(`/order/${orderId}`, {
                 method: 'DELETE',
             });
             const data = await response.json();
@@ -144,7 +144,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="Novotel_logo.png" alt="Novotel Logo" class="logo">
+        <img src="https://p1.hiclipart.com/preview/435/261/190/restaurant-logo-novotel-hotel-accommodation-organization-text-blue-azure-png-clipart.jpg" alt="Novotel Logo" class="logo">
         <h1>Novotel Restaurant</h1>
 
         <h2>Create Order</h2>

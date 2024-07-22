@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac5a43d5-7d1f-48a1-942e-358218355071" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/logs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Restaurent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Simple_Restaurant_application.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/logging_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logging_logic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/html_scripts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/html_scripts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/apps/logs/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logging_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/logs/logging_logic.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -38,12 +46,13 @@
     &quot;Python.app.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dinesh Sai/Documents/Job Training/Restaurent&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dinesh Sai/Documents/Job Training/HARDWAY_OF_CRUD/AppDev/AppDev1&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dinesh Sai\Documents\Job Training\Simple_Restautant_application\apps" />
       <recent name="C:\Users\Dinesh Sai\Documents\Job Training\Restaurent" />
     </key>
   </component>

@@ -148,3 +148,139 @@
 2024-07-16 18:58:54,610 - INFO -  * Restarting with stat
 2024-07-16 18:58:55,699 - WARNING -  * Debugger is active!
 2024-07-16 18:58:55,716 - INFO -  * Debugger PIN: 758-038-937
+2024-07-22 12:25:17,284 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-22 12:25:17,285 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-22 12:25:17,295 - INFO -  * Restarting with stat
+2024-07-22 12:25:18,146 - WARNING -  * Debugger is active!
+2024-07-22 12:25:18,164 - INFO -  * Debugger PIN: 359-290-181
+2024-07-22 12:34:55,010 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-22 12:34:55,010 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-22 12:34:55,021 - INFO -  * Restarting with stat
+2024-07-22 12:34:55,864 - WARNING -  * Debugger is active!
+2024-07-22 12:34:55,876 - INFO -  * Debugger PIN: 359-290-181
+2024-07-22 12:35:04,951 - INFO - get_order function has started...
+2024-07-22 12:35:04,951 - DEBUG - For order id=1---->{'category': 'Chinese Fast Foods', 'status': 'Preparing'}
+2024-07-22 12:35:04,951 - INFO - get_order function has ended...
+2024-07-22 12:35:04,951 - INFO - 127.0.0.1 - - [22/Jul/2024 12:35:04] "GET /order/1 HTTP/1.1" 200 -
+2024-07-22 12:40:08,082 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-22 12:40:08,082 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-22 12:40:08,094 - INFO -  * Restarting with stat
+2024-07-22 12:40:09,330 - WARNING -  * Debugger is active!
+2024-07-22 12:40:09,344 - INFO -  * Debugger PIN: 359-290-181
+2024-07-22 12:40:14,070 - INFO - get_order function has started...
+2024-07-22 12:40:14,070 - ERROR - For getting order info, order id =5 has not found
+2024-07-22 12:40:14,070 - INFO - get_order function has ended...
+2024-07-22 12:40:14,072 - INFO - 127.0.0.1 - - [22/Jul/2024 12:40:14] "[33mGET /order/5 HTTP/1.1[0m" 404 -
+2024-07-22 12:48:17,591 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-22 12:48:17,592 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-22 12:48:17,611 - INFO -  * Restarting with stat
+2024-07-22 12:48:18,996 - WARNING -  * Debugger is active!
+2024-07-22 12:48:19,010 - INFO -  * Debugger PIN: 359-290-181
+2024-07-22 12:48:24,757 - INFO - get_order function has started...
+2024-07-22 12:48:24,757 - ERROR - For getting order info, order id =5 has not found
+2024-07-22 12:48:24,757 - INFO - get_order function has ended...
+2024-07-22 12:48:24,760 - INFO - 127.0.0.1 - - [22/Jul/2024 12:48:24] "[33mGET /order/5 HTTP/1.1[0m" 404 -
+2024-07-22 12:48:44,923 - INFO - get_order function has started...
+2024-07-22 12:48:44,923 - ERROR - For getting order info, order id =10 has not found
+2024-07-22 12:48:44,924 - INFO - get_order function has ended...
+2024-07-22 12:48:44,924 - INFO - 127.0.0.1 - - [22/Jul/2024 12:48:44] "[33mGET /order/10 HTTP/1.1[0m" 404 -
+2024-07-22 12:48:52,914 - INFO - 127.0.0.1 - - [22/Jul/2024 12:48:52] "OPTIONS /order/10 HTTP/1.1" 200 -
+2024-07-22 12:48:52,922 - INFO - update_order function has started...
+2024-07-22 12:48:52,922 - ERROR - For updating order, Order id = 10 has not found
+2024-07-22 12:48:52,922 - INFO - update_order function has ended...
+2024-07-22 12:48:52,922 - INFO - 127.0.0.1 - - [22/Jul/2024 12:48:52] "[33mPUT /order/10 HTTP/1.1[0m" 404 -
+2024-07-22 12:56:53,030 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-22 12:56:53,030 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-22 12:56:53,040 - INFO -  * Restarting with stat
+2024-07-22 12:56:54,254 - WARNING -  * Debugger is active!
+2024-07-22 12:56:54,273 - INFO -  * Debugger PIN: 359-290-181
+2024-07-22 12:57:12,250 - INFO - 127.0.0.1 - - [22/Jul/2024 12:57:12] "OPTIONS /order HTTP/1.1" 200 -
+2024-07-22 12:57:12,255 - INFO - dinesh - create_order function has started...
+2024-07-22 12:57:12,255 - DEBUG - dinesh - For order id=4--->{'category': 'ddddqq#', 'status': 'Preparing'}
+2024-07-22 12:57:12,255 - DEBUG - dinesh - "order_id": 4, "status": "Order received"
+2024-07-22 12:57:12,255 - INFO - dinesh - create_order function has ended...
+2024-07-22 12:57:12,255 - INFO - 127.0.0.1 - - [22/Jul/2024 12:57:12] "POST /order HTTP/1.1" 200 -
+2024-07-22 12:57:55,674 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-22 12:57:55,675 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-22 12:57:55,690 - INFO -  * Restarting with stat
+2024-07-22 12:57:56,625 - WARNING -  * Debugger is active!
+2024-07-22 12:57:56,641 - INFO -  * Debugger PIN: 359-290-181
+2024-07-22 12:58:09,056 - INFO - 127.0.0.1 - - [22/Jul/2024 12:58:09] "OPTIONS /order HTTP/1.1" 200 -
+2024-07-22 12:58:09,062 - INFO - dinesh - create_order function has started...
+2024-07-22 12:58:09,063 - DEBUG - dinesh - For order id=4--->{'category': 'ddddqq#', 'status': 'Preparing'}
+2024-07-22 12:58:09,063 - DEBUG - dinesh - "order_id": 4, "status": "Order received"
+2024-07-22 12:58:09,063 - INFO - dinesh - create_order function has ended...
+2024-07-22 12:58:09,064 - INFO - 127.0.0.1 - - [22/Jul/2024 12:58:09] "POST /order HTTP/1.1" 200 -
+2024-07-22 12:58:15,970 - INFO - 127.0.0.1 - - [22/Jul/2024 12:58:15] "OPTIONS /order HTTP/1.1" 200 -
+2024-07-22 12:58:15,974 - INFO - dinesh - create_order function has started...
+2024-07-22 12:58:15,974 - DEBUG - dinesh - For order id=5--->{'category': 'ffff', 'status': 'Preparing'}
+2024-07-22 12:58:15,974 - DEBUG - dinesh - "order_id": 5, "status": "Order received"
+2024-07-22 12:58:15,974 - INFO - dinesh - create_order function has ended...
+2024-07-22 12:58:15,974 - INFO - 127.0.0.1 - - [22/Jul/2024 12:58:15] "POST /order HTTP/1.1" 200 -
+2024-07-22 13:02:46,145 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-22 13:02:46,146 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-22 13:02:46,164 - INFO -  * Restarting with stat
+2024-07-22 13:02:47,392 - WARNING -  * Debugger is active!
+2024-07-22 13:02:47,412 - INFO -  * Debugger PIN: 359-290-181
+2024-07-22 13:02:56,252 - INFO - dinesh - get_order function has started...
+2024-07-22 13:02:56,252 - ERROR - For getting order info, order id =5 has not found
+2024-07-22 13:02:56,253 - INFO - dinesh - get_order function has ended...
+2024-07-22 13:02:56,254 - INFO - 127.0.0.1 - - [22/Jul/2024 13:02:56] "[33mGET /order/5 HTTP/1.1[0m" 404 -
+2024-07-22 13:03:00,708 - INFO - 127.0.0.1 - - [22/Jul/2024 13:03:00] "OPTIONS /order/5 HTTP/1.1" 200 -
+2024-07-22 13:03:00,711 - INFO - dinesh - update_order function has started...
+2024-07-22 13:03:00,711 - ERROR - dinesh - For updating order, Order id = 5 has not found
+2024-07-22 13:03:00,711 - INFO - dinesh - update_order function has ended...
+2024-07-22 13:03:00,711 - INFO - 127.0.0.1 - - [22/Jul/2024 13:03:00] "[33mPUT /order/5 HTTP/1.1[0m" 404 -
+2024-07-22 13:05:52,698 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-22 13:05:52,698 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-22 13:05:52,708 - INFO -  * Restarting with stat
+2024-07-22 13:05:53,889 - WARNING -  * Debugger is active!
+2024-07-22 13:05:53,906 - INFO -  * Debugger PIN: 359-290-181
+2024-07-22 13:05:54,587 - INFO - dinesh - get_order function has started...
+2024-07-22 13:05:54,587 - DEBUG - dinesh - For order id=1---->{'category': 'Chinese Fast Foods', 'status': 'Preparing'}
+2024-07-22 13:05:54,587 - INFO - dinesh - get_order function has ended...
+2024-07-22 13:05:54,588 - INFO - 127.0.0.1 - - [22/Jul/2024 13:05:54] "GET /order/1 HTTP/1.1" 200 -
+2024-07-22 13:06:00,417 - INFO - 127.0.0.1 - - [22/Jul/2024 13:06:00] "OPTIONS /order/1 HTTP/1.1" 200 -
+2024-07-22 13:06:00,425 - INFO - dinesh - update_order function has started...
+2024-07-22 13:06:00,425 - DEBUG - dinesh - Updating the orderID=1
+2024-07-22 13:06:00,426 - DEBUG - dinesh - Before updating the order = {'category': 'Chinese Fast Foods', 'status': 'Preparing'}
+2024-07-22 13:06:00,426 - DEBUG - dinesh - After Updated the order is = {'category': 'Chinese Fast Foods', 'status': 'completed'}
+2024-07-22 13:06:00,426 - INFO - dinesh - update_order function has ended...
+2024-07-22 13:06:00,426 - INFO - 127.0.0.1 - - [22/Jul/2024 13:06:00] "PUT /order/1 HTTP/1.1" 200 -
+2024-07-22 13:23:41,973 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2024-07-22 13:23:41,974 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-22 13:23:41,996 - INFO -  * Restarting with stat
+2024-07-22 13:23:43,357 - WARNING -  * Debugger is active!
+2024-07-22 13:23:43,380 - INFO -  * Debugger PIN: 359-290-181
+2024-07-22 13:23:50,859 - INFO - 127.0.0.1 - - [22/Jul/2024 13:23:50] "OPTIONS /order HTTP/1.1" 200 -
+2024-07-22 13:23:50,867 - INFO - dinesh - create_order function has started...
+2024-07-22 13:23:50,868 - DEBUG - dinesh - For order id=4--->{'category': '1', 'status': 'Preparing'}
+2024-07-22 13:23:50,868 - DEBUG - dinesh - "order_id": 4, "status": "Order received"
+2024-07-22 13:23:50,869 - INFO - dinesh - create_order function has ended...
+2024-07-22 13:23:50,870 - INFO - 127.0.0.1 - - [22/Jul/2024 13:23:50] "POST /order HTTP/1.1" 200 -
+2024-07-22 13:23:55,503 - INFO - dinesh - get_order function has started...
+2024-07-22 13:23:55,504 - DEBUG - dinesh - For order id=2---->{'category': 'Indian Vegetarian', 'status': 'Preparing'}
+2024-07-22 13:23:55,504 - INFO - dinesh - get_order function has ended...
+2024-07-22 13:23:55,504 - INFO - 127.0.0.1 - - [22/Jul/2024 13:23:55] "GET /order/2 HTTP/1.1" 200 -
+2024-07-22 13:24:00,472 - INFO - 127.0.0.1 - - [22/Jul/2024 13:24:00] "OPTIONS /order/2 HTTP/1.1" 200 -
+2024-07-22 13:24:00,480 - INFO - dinesh - update_order function has started...
+2024-07-22 13:24:00,480 - DEBUG - dinesh - Updating the orderID=2
+2024-07-22 13:24:00,480 - DEBUG - dinesh - Before updating the order = {'category': 'Indian Vegetarian', 'status': 'Preparing'}
+2024-07-22 13:24:00,480 - DEBUG - dinesh - After Updated the order is = {'category': 'Indian Vegetarian', 'status': 'completed'}
+2024-07-22 13:24:00,481 - INFO - dinesh - update_order function has ended...
+2024-07-22 13:24:00,482 - INFO - 127.0.0.1 - - [22/Jul/2024 13:24:00] "PUT /order/2 HTTP/1.1" 200 -
+2024-07-22 13:24:03,630 - INFO - dinesh - get_order function has started...
+2024-07-22 13:24:03,631 - DEBUG - dinesh - For order id=2---->{'category': 'Indian Vegetarian', 'status': 'completed'}
+2024-07-22 13:24:03,631 - INFO - dinesh - get_order function has ended...
+2024-07-22 13:24:03,632 - INFO - 127.0.0.1 - - [22/Jul/2024 13:24:03] "GET /order/2 HTTP/1.1" 200 -
