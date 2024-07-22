@@ -7,7 +7,7 @@ ARG name=simple-restaurant-application
 #It creates the directory with name=simple-restaurant-application && change the directory to "simple-restaurant-application"
 RUN mkdir name && cd name
 
-#Copy all content into the image
+#Copy all content into the present directory
 COPY . .
 
 #installing packages
