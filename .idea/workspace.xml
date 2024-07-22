@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac5a43d5-7d1f-48a1-942e-358218355071" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kube-manifest/deployment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kube-manifest/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JenkinsFile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
