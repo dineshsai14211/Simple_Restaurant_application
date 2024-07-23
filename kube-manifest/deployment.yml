@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: simple-restaurant-app-container
-        image: dineshsai14211/simple-restaurant-app-img:9
+        image: dineshsai14211/simple-restaurant-app-img:10
         ports:
         - containerPort: 5000
