@@ -37,13 +37,21 @@ pipeline {
             }
         }
 
-        stage('Update the Manifeast files'){
+        stage('Checkout manifest'){
+            steps{
+                checkout scmGit(branches: [[name: '*/main']], extensions: [],
+                userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/dineshsai14211/Simple_Restaurant_application_mainfests']])
+            }
+        }
+
+
+       stage('Update manifest files'){
             steps{
                 script{
-                    withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]){
+                    withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
 
-                    sh '''
-                      cat kube-manifest/deployment.yml
+                sh '''
+                    cat kube-manifest/deployment.yml
                       git config  user.email "dinesh@example.com"
                       git config  user.name "dinesh"
 
@@ -53,11 +61,11 @@ pipeline {
                       git commit -m "Image tag has changed"
                       git remote -v
                       git push origin HEAD:main
-                    '''
-                    }
+                '''
                 }
             }
         }
+       }
+
     }
 }
-
