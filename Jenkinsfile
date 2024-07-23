@@ -51,11 +51,11 @@ pipeline {
                     withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
 
                 sh '''
-                    cat kube-manifest/deployment.yml
+                    cat kube-manifest/deployment.yaml
                       git config  user.email "dinesh@example.com"
                       git config  user.name "dinesh"
 
-                      sed -i "s/simple-restaurant-app-img.*/simple-restaurant-app-img:${BUILD_NUMBER}/g" kube-manifest/deployment.yml
+                      sed -i "s/simple-restaurant-app-img.*/simple-restaurant-app-img:${BUILD_NUMBER}/g" kube-manifest/deployment.yaml
                       cd kube-manifest
                       git add *
                       git commit -m "Image tag has changed"
